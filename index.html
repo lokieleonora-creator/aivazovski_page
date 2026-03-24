@@ -1,53 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="icon" href="assets/favicon.png" type="image/png">
     <link rel="stylesheet" href="index.css">
     <title>Aivazovski</title>
 </head>
+
 <body>
     <header class="header" aria-label="header">
         <div class="container">
-            <div class="nav" aria-label="header navigation">
+            <nav class="nav" aria-label="header navigation">
                 <ul class="nav-list" aria-label="header navigation list">
                     <li>
-                        <a href="#" class="nav-link" aria-label="link to home">Home</a>
+                        <a href="#home-id" class="nav-link" aria-label="link to home">Home</a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link" aria-label="link to about">About</a>
+                        <a href="#about-id" class="nav-link" aria-label="link to about">About</a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link" aria-label="link to history">History</a>
+                        <a href="#history-id" class="nav-link" aria-label="link to history">History</a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link" aria-label="link to portfolio">Portfolio</a>
+                        <a href="#portfolio-id" class="nav-link" aria-label="link to portfolio">Portfolio</a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link" aria-label="link to contacts">Contacts</a>
+                        <a href="#contacts-id" class="nav-link" aria-label="link to contacts">Contacts</a>
                     </li>
                 </ul>
-            </div>
+            </nav>
         </div>
     </header>
 
+    <div class="mobile-navigation" aria-label="mobile-navigation">
+        <label for="toggler-id" aria-label="open-close mobile-navigation menu">
+            <svg class="mobile-navigation-burger" aria-label="burger icon">
+                <use href="assets/sprites.svg#burger-icon"></use>
+            </svg>
+        </label>
+
+        <input type="checkbox" id="toggler-id" class="mobile-navigation-toggler">
+
+        <nav class="mobile-navigation-menu" aria-label="mob header navigation">
+            <ul class="mobile-navigation-list" aria-label="mob header navigation list">
+                <li>
+                    <a href="#home-id" class="mobile-navigation-link" aria-label="link to home">Home</a>
+                </li>
+                <li>
+                    <a href="#about-id" class="mobile-navigation-link" aria-label="link to about">About</a>
+                </li>
+                <li>
+                    <a href="#history-id" class="mobile-navigation-link" aria-label="link tohistory">History</a>
+                </li>
+                <li>
+                    <a href="#portfolio-id" class="mobile-navigation-link" aria-label="link toportfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contacts-id" class="mobile-navigation-link" aria-label="link to contacts">Contacts</a>
+                </li>
+            </ul>
+
+            <label for="toggler-id" aria-label="open-close mobile-navigation menu" class="mobile-navigation-close">
+                <svg class="mobile-navigation-cross" aria-label="cross icon">
+                    <use href="assets/sprites.svg#cross-icon"></use>
+                </svg>
+            </label>
+        </nav>
+    </div>
+
     <main aria-label="main">
-        <section class="home" aria-label="home section">
+        <section class="home" aria-label="home section" id="home-id">
             <div class="container">
-                <h1 class="home-title" aria-label="title">Ivan Constantinovich Aivazovski</h1>
-                <p class="home-description" aria-label="description">Russian marine painter of Armenian origin, collector, philanthropist</p>
+                <h1 class="home-title" aria-label="title">ЖУРНАЛ SUCCESS WORLD | SUCCESS CLUB</h1>
+                <p class="home-description" aria-label="description">Площадка для объединения лидеров из различных сфер
+                    культуры и бизнеса, для обмена опытом и актуальными знаниями.</p>
                 <img src="assets/webp/home.webp" alt="photo of Aivazovski" class="home-img">
+            </div>
+        </section>
+
+        <section class="about" aria-label="about section" id="about-id">
+            <div class="container">
+                <h2 class="about-title" aria-label="about title">About</h2>
+                <h3 class="about-subtitle-ru" aria-label="about subtitle ru">ВСТРЕЧИ офлайн в Москве и Санкт-Петербурге,
+                    нетворкинг и полезные связи.
+                    ‌Обзор светских и культурных мероприятий.
+                    Публикации вашей истории успеха, информации о бизнесе или реклама в журнале SUCCESS WORLD.</p>
+
+                    <hr class="divider" aria-label="divider">
+
+                    <h3 class="about-subtitle-en" aria-label="about subtitle en">A platform for bringing together
+                        leaders from various fields of culture and business to share experiences and relevant knowledge.
+                    </h3>
+                    <p class="about-description-en" aria-label="description en">Offline meetings in Moscow and St.
+                        Petersburg, networking, and useful connections.
+                        OVERVIEW of social and cultural events.
+                        PUBLICATIONS of your success story, business information, or advertising in SUCCESS WORLD
+                        magazine.</p>
+            </div>
+        </section>
+
+        <section class="history" aria-label="history section" id="history-id">
+            <div class="container">
+                <h2 class="history-title">History</h2>
+                <img src="assets/webp/history.webp" alt="house of Aivazovsky" class="history-photo">
+                <p class="history-description" aria-label="history description">Журнал прошел путь от уникальной идеи до
+                    полноценного издания, транслирующего опыт предпринимателей.</p>
+            </div>
+        </section>
+
+        <section class="portfolio" aria-label="portfolio section" id="portfolio-id">
+            <div class="container">
+                <h2 class="portfolio-title">Portfolio</h2>
+                <img src="assets/webp/portfolio_1.webp" alt="Winter wagon train on the way" class="portfolio-picture">
+                <p class="portfolio-description" aria-label="picture 1 description">Презентация SUCCESS World в
+                    Ростове-на-Дону</p>
+
+                <img src="assets/webp/portfolio_2.webp" alt="Rainbow" class="portfolio-picture">
+                <p class="portfolio-description" aria-label="picture 2 description"> SUCCESS под Алыми парусами
+                    30.07.2025 </p>
+
+                <img src="assets/webp/portfolio_3.webp" alt="Gulf of Naples in the morning" class="portfolio-picture">
+                <p class="portfolio-description" aria-label="picture 3 description"> УСПЕХ в гостях у... Catarina Nova
+24.04.2025 </p>
             </div>
         </section>
 
     </main>
 
-    <footer>
+    <footer class="contacts" aria-label="contacts section" id="contacts-id">
+        <div class="container">
+            <h2 class="contacts-title">Contacts</h2>
+            <button class="contacts-button">
+                <a href="https://www.skuspeh.com/" class="button-link">skuspeh.com</a>
+            </button>
+
+            <address class="socials" aria-label="social icons">
+
+                <a href="https://youtube.com" target="_blank" aria-label="link to youtube">
+                    <svg class="social-icon" aria-label="youtube icon">
+                        <use href="assets/sprites.svg#youtube-icon"></use>
+                    </svg>
+                </a>
+
+                <a href="https://linkedin.com" target="_blank" aria-label="link to linkedin">
+                    <svg class="social-icon" aria-label="linkedin icon">
+                        <use href="assets/sprites.svg#linkedin-icon"></use>
+                    </svg>
+                </a>
+
+                <a href="https://instagram.com" target="_blank" aria-label="link to instagram">
+                    <svg class="social-icon" aria-label="instagram icon">
+                        <use href="assets/sprites.svg#instagram-icon"></use>
+                    </svg>
+                </a>
+
+                <a href="https://facebook.com" target="_blank" aria-label="link to facebook">
+                    <svg class="social-icon" aria-label="facebook icon">
+                        <use href="assets/sprites.svg#facebook-icon"></use>
+                    </svg>
+                </a>
+            </address>
+
+            <p class="contacts-info" aria-label="just for notice">More works you can see in these social networks</p>
+        </div>
 
     </footer>
 </body>
+
 </html>

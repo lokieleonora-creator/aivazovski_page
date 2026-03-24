@@ -1,5 +1,6 @@
 .home {
     text-align: center;
+    padding: 0 0 70px 0;
 }
 
 .home-title {
@@ -27,7 +28,7 @@
     }
 
     .home-title {
-        max: width 250px;
+    max-width: 250px;
     font-size: 32px;
     }
 
